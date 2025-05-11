@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  src: url(fonts/Manrope-Regular.ttf);
+  font-family: manrope;
+}
+body {
+  font-family: manrope;
+}
+:root {
+  --color1: rgba(243, 244, 246, 255);
+  --color2: rgba(230, 231, 235, 255);
+  --color3: rgba(255, 255, 255, 255);
+}
+html {
+  font-size: 50%;
+}
+#container {
+  /* margin-top: 5rem; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  width: 100vw;
+  background-color: rgba(243, 244, 246, 255);
+}
+.section1 {
+  width: 90%;
+  padding-top: 2rem;
+  height: 50%;
+  background-color: rgba(230, 231, 235, 255);
+}
+.section2 {
+  width: 90%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 255);
+  padding-bottom: 3rem;
+}
+.item-section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  margin-left: 5%;
+  gap: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: 0.5px groove grey;
+  margin-bottom: 3rem;
+  /* justify-content: space-between; */
+}
+.device {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  background-color: var(--color3);
+  border-radius: 5px;
+}
+.item-name {
+  width: 40%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 12rem;
+}
+.item-name h4 {
+  font-size: 2.5rem;
+}
+.item-name h4 + p {
+  transform: translateY(-2rem);
+  font-size: 2rem;
+}
+.item-name h4 + p + p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.item-price {
+  /* border: 2px solid black; */
+  height: 12rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 2rem;
+}
+.coupon-section {
+  width: 90%;
+  transform: translateX(2.5rem);
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.coupon-section input {
+  width: 50%;
+  height: 6rem;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+}
+.coupon-section button {
+  width: 40%;
+  font-size: 2rem;
+  font-weight: 700;
+  height: 6rem;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.total-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+  /* align-items: center; */
+}
+.item-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  padding-bottom: 3rem;
+}
+.total-section :nth-child(3n) {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-top: 3rem;
+}
+.contact-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 800;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 600;
+}
+.form-item input {
+  height: 6rem;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: var(--color2);
+  border-radius: 5px;
+  border: none;
+}
+#country-region {
+  display: flex;
+  gap: 2rem;
+  width: inherit;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+}
+.country {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.country select {
+  height: 6rem;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: var(--color2);
+  border-radius: 5px;
+  border: none;
+}
+.postal-code {
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  font-weight: 600;
+}
+.postal-code input {
+  height: 6rem;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: var(--color2);
+  border-radius: 5px;
+  border: none;
+}
+.form-btn {
+  color: white;
+  background-color: black;
+  height: 6rem;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  font-size: 2.2rem;
+  box-shadow: 1px 1px 3px grey;
+}

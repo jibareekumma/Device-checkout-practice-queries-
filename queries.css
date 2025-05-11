@@ -1,0 +1,56 @@
+@media (min-width: 64rem) {
+  html {
+    font-size: 56.25%;
+  }
+  #container {
+    display: flex;
+    width: 90vw;
+    flex-direction: row;
+    /* align-items: baseline; */
+    align-items: flex-start;
+    margin: 0 auto;
+    /* border: 3px solid green; */
+  }
+  .section1 {
+    padding-top: 5rem;
+  }
+  .section2 {
+    /* display: flex;
+    flex-direction: column;
+    gap: 5rem; */
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .contact-section {
+    width: 100%;
+    transform: translateY(0.7rem);
+  }
+  .coupon-section input {
+    width: 65%;
+  }
+  .images {
+    width: 15%;
+  }
+}
+
+@media (min-width: 84.3rem) {
+  html {
+    font-size: 50%;
+  }
+  .coupon-section input {
+    width: 75%;
+  }
+  .section2 {
+    /* border: 2px solid green; */
+    /* width: 100%; */
+  }
+  .contact-section {
+    width: 100%;
+  }
+  .images {
+    width: 15%;
+  }
+}
